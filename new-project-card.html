@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background:#FFB997;
+            z-index: 1;
+            text-decoration: #0B032D;
+        }
+        #background{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            background: #F67E7D;
+            height: 1500px;
+            position: relative;
+            border-radius: 40px;
+            margin: 50px;
+        }
+        #card{
+            width:900px;
+            height:700px;
+            background: #843B62;
+            border-radius: 20px;
+            overflow: hidden;
+            
+        }
+        #card h1{
+         background: #843B62;
+         text-align: center;
+         text-decoration: underline;
+         font-size: xxx-large;
+         margin: 10px;
+        }
+        #card img{
+            width: 100%;
+            height: 85%;
+        }
+        #info{
+            width: 100%;
+            height: 700px;
+            background: #F67E7D ;
+            display: flex;
+            justify-content: space-around;
+        }
+        .infocard{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            background: #843B62;
+            width: 800px;
+            height: 700px;
+            border-radius: 50px;
+        }
+        .infocard h2{
+            background: #843B62;
+            text-decoration: underline;
+            font-size: xx-large;
+        }
+        .infocard ul li{
+            display: flex;
+            background-clip:padding-box;
+            background: #843B62;
+            font-size: xx-large;
+            align-items: flex-start;
+            position: relative;
+            z-index: 5;
+        }
+        ul{
+            padding-inline-start: 0px;
+            margin-left: 40px;
+            margin-right: 40px
+        }
+        .infocard img{
+            width: 30%;
+            height: 45%;
+            border-radius: 10px;
+            border:solid 10px #FFB997
+        } 
+    </style>
+</head>
+<body>
+    <div>
+    <div class="container" Id="background">
+        <section class="item" id="card">
+            <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg" alt="pag-web">
+            <h1>Los tres lenguages del Desarrollo Web</h1>
+        </section>
+        <section class="details" id="info">
+            <section class="infocard" id="one">
+                <h2>HTML</h2>
+                <img src="https://c8.alamy.com/compes/k2298f/el-esqueleto-humano-se-compone-de-206-huesos-articulados-de-diferentes-tamanos-y-formas-k2298f.jpg" alt="skeleton">
+                <ul>
+                    <li>⚫Hyper-Text Markup Language por sus siglas en inglés</li>
+                    <li>⚫Es un lenguaje de MARCADO DE TEXTO</li>
+                    <li>⚫Sirve como estructura de la pagina web</li>
+                    <li>⚫Usa etiquetas para marcar texto y así ordenarlo</li>
+                </ul>
+            </section>
+            <section class="infocard" id="two">
+                <h2>Javascript</h2>
+                <img src="https://www.shutterstock.com/image-illustration/central-organ-human-nervous-system-260nw-2001083240.jpg" alt="nervios">
+                <ul>
+                    <li>⚫Abreviado comunmente como JS</li>
+                    <li>⚫Es un lenguaje de PROGRAMACIÓN INTERPRETADO</li>
+                    <li>⚫Sirve para enviar y recibir información del servidor de una página web</li>
+                    <li>⚫Entiende de forma nativa a los navegadores</li>
+                </ul>
+            </section>
+            <section class="infocard" id="three">
+                <h2>CSS</h2>
+                <img src="https://cdn3.f-cdn.com/contestentries/1529158/13930193/5d2484bd6c00a_thumbCard.jpg" alt="carne">
+                <ul>
+                    <li>⚫Cascade Style Sheet por sus siglas en inglés</li>
+                    <li>⚫Es un lenguaje de DISEÑO GRÁFICO</li>
+                    <li>⚫Sirve para definir la presentación de la pagina web</li>
+                    <li>⚫Se vale de un sistema de cascada para definir los estilos y el layout de la página</li>
+                </ul>
+            </section>
+        </section>
+    </div>
+    </div>
+</body>
+</html>
